@@ -1,7 +1,7 @@
 <div class="card minglow br24">
     <img src="Vistas/img/images/logosolo.png" class="mb-2">
     <form method="post">
-        <input type="text" name="name" placeholder="Nombre">
+        <input type="text" name="nombre" placeholder="Nombre">
         <input type="text" id="user1" name="usuario" placeholder="Nombre de Usuario">
         <p id="UR">El Usuario Ya Existe</p>
 

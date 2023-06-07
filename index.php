@@ -1,15 +1,15 @@
 <?php 
 
-require_once "Controladores/plantillaC.php";
+require_once "controladores/plantillaC.php";
 
-require_once "Controladores/generalesC.php";
-require_once "Modelos/generalesM.php";
+require_once "controladores/generalesC.php";
+require_once "modelos/generalesM.php";
 
-require_once "Controladores/usuariosC.php";
-require_once "Modelos/usuariosM.php";
+require_once "controladores/usuariosC.php";
+require_once "modelos/usuariosM.php";
 
-require_once "Controladores/peliculasC.php";
-require_once "Modelos/peliculasM.php";
+require_once "controladores/peliculasC.php";
+require_once "modelos/peliculasM.php";
 
 $plantilla = new Plantilla();
 $plantilla -> LLamarPlantilla();

@@ -2,7 +2,7 @@
 
 class UsuariosC{
 
-	public function RegistrarUsuarioC(){
+	static public function RegistrarUsuarioC(){
 
 		if(isset($_POST["nombre"])){
 
@@ -52,7 +52,7 @@ class UsuariosC{
 
 	
 
-	public function IniciarSesionC(){
+	static public function IniciarSesionC(){
 
 		if(isset($_POST["usuario"])){
 
@@ -95,7 +95,7 @@ class UsuariosC{
 	}
 
 
-	public function EditarPerfilC(){
+	static public function EditarPerfilC(){
 
 		if(isset($_POST["id"])){
 			
@@ -190,7 +190,7 @@ class UsuariosC{
 
 	// ================================================================
 	// Solicitudes
-	public function EnviarSolcitudC($id_seg, $id_u){
+	static public function EnviarSolcitudC($id_seg, $id_u){
 
 			$tablaBD = "solicitudes";
 
@@ -216,7 +216,7 @@ class UsuariosC{
 
 
 	// Solicitudes
-	public function CancelarSolcitudC($id_seg, $id_uCancelar){
+	static public function CancelarSolcitudC($id_seg, $id_uCancelar){
 
 			$tablaBD = "solicitudes";
 
@@ -230,7 +230,7 @@ class UsuariosC{
 
 
 	// Dejar de Seguir y Eliminar de Seguidos
-	public function DejarDeSeguirC($id_seg, $id_uDejar){
+	static public function DejarDeSeguirC($id_seg, $id_uDejar){
 
 			$tablaBD = "solicitudes";
 
@@ -258,7 +258,7 @@ class UsuariosC{
 	}
 
 	// BORRAR SOLICITUDES
-	public function BorrarSolicitudC($id_solicitud){
+	static public function BorrarSolicitudC($id_solicitud){
 
 		$tablaBD = "solicitudes";
 
@@ -270,7 +270,7 @@ class UsuariosC{
 
 
 	// ACEPTAR SOLICITUDES
-	public function AceptarSolicitudC($id_solicitudAceptada){
+	static public function AceptarSolicitudC($id_solicitudAceptada){
 
 		$tablaBD = "solicitudes";
 
@@ -333,7 +333,7 @@ class UsuariosC{
 
 
 	// ENVIAR TAMBIEN SOLICITUD
-	public function EnviarSolicitudTambienC($id_solicitudEnv){
+	static public function EnviarSolicitudTambienC($id_solicitudEnv){
 
 		$tablaBD = "solicitudes";
 		$tipo = 'unaSol';
