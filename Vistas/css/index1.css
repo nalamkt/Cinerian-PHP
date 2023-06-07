@@ -1,0 +1,525 @@
+@charset utf-8;
+
+body{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	overflow: none;
+	min-height: 100vh;
+	background:#26231A !important;
+}
+ul{
+	list-style-type: none;
+	padding: 0;
+	overflow:hidden;
+}
+ul a li{
+	padding: 40px;
+	color:black;
+	text-decoration: none;
+}
+ul a:hover{
+	text-decoration: none;
+}
+ul a li:hover{
+	background: white;
+	text-decoration: none;
+}
+ul a{
+	text-decoration: none;
+}
+header{
+	color: white;
+	height: none !important;
+/*	box-shadow: 10px 10px 50px rgba(253, 158, 40, 0.8) ;*/
+ 	width: 20%;
+    float: left;
+    position: fixed;
+    height: 100%;
+}
+header img{
+    width: 50%;
+}
+#header{
+	color: white;
+	background: #000;
+	padding: 5px 40px;
+}
+#header .align{
+	text-align: right;
+}
+header h1{
+	color: white !important;
+}
+header #logo{
+	width: 30%;
+	min-width: 50px;
+	padding-left: 20px;
+}
+header ul{
+	list-style-type: none;
+	width: 100%;
+	vertical-align: middle;
+	margin-top: revert;
+}
+ header img{
+    width: 50%;
+}
+header ul li{
+    display: block !important;
+    float: none;
+    width: 100%;
+    text-align: left;
+    margin-top: 20%;
+    font-size: 21px;
+}
+header ul li a:hover{
+    font-weight: bolder;
+    color:white;
+}
+header ul li a img{
+    width: 25px;
+    margin-right: 20px;
+}
+header #searchbar{
+	padding-top:30px;
+}
+.line{
+	border-bottom: solid 2px #FD9E28;
+}
+header #searchbar form{
+	width: 70%;
+	overflow: hidden;
+	float: left;
+}
+header #searchbar svg{
+	float: left;
+}
+header #searchbar form input{
+	background:none;
+	color:white;
+	border:none;
+	float:left;
+	width: 90%;
+	padding:0px 00px 5px 20px;
+}
+.header2{
+	width: 7%;
+	display: none;
+}
+.header2 #logo{
+	width: 100%;
+}
+.header2 ul li a img{
+	width: 80%;
+}
+.header2 ul li{
+	margin-top: 60px;
+}
+.content{
+    float: left;
+    margin-left: 20% !important;
+    padding: 3% 5%;
+    width: 80%;
+    background:#26231B !important;
+    color:white;
+}
+.arrow{
+	width: 100%;
+	text-align: right;
+}
+.actions button{
+	background:none;
+	border:solid 0.2px rgba(253, 158, 40,0.2);
+	border-radius: 18px;
+	font-size: 21px;
+	padding: 5px 30px;
+	color:rgb(253, 158, 40);
+	font-weight: bolder;
+}
+.actions button:hover{
+	color:black;
+	background:rgba(253, 158, 40,0.5);
+/*	box-shadow: 1px 1px 20px rgba(253, 158, 40, 0.8) ;*/
+}
+.avcon{
+	width: 99%;
+	margin: auto;
+}
+.avcon_inner{
+	margin: auto;
+}
+.avcon_inner .card{
+	background:#26231A;
+}
+#not{
+	width: 25px;
+}
+#user{
+	width: 45px;
+	margin-left: 40px;
+}
+.show{
+	border-radius: 5%;
+	background: black;
+	z-index: 0;
+}
+.show iframe{
+	height: 70vh;
+	z-index: 0;
+}
+.show img{
+	width: 80%;
+	margin: auto;
+}
+.show iframe,.show img{
+	box-shadow: 1px 1px 90px rgba(253, 158, 40, 0.8) ;
+	z-index: 0;
+	filter: brightness(0.4);
+}
+.show iframe:hover,.show img:hover{
+	filter: brightness(1.1);
+}
+.watch{
+	text-align: center;
+	position: relative;
+	z-index: 9;
+	margin-top: -80px;
+}
+.watch .calif{
+	width: 70%;
+	padding-left: 10%;
+	z-index: 9;
+	margin-bottom: 40px;
+}
+.watch .calif h1{
+	color: white;
+	text-align: left;
+	z-index: 9;
+	font-weight: 900;
+}
+.watch .row{
+	width: 100%;
+	margin: auto;
+}
+.watch svg{
+	width: 90%;
+	margin:auto;
+	text-align: center;
+}
+.Actbut{
+	background:#26231b;
+	fill:#26231b;
+}
+.info{
+	padding-left: 5%;
+	color:white;
+}
+.info p{
+	font-size: 21px;
+	color:#FDB62B;
+}
+.info h2{
+	color:#FDB62B;
+	font-weight: 900;
+	font-size: 32px;
+}
+.info h3{
+	color:#FDB62B;
+	font-weight: 500;
+	font-size: 28px;
+}
+.info .detail{
+	font-size: 26px;
+}
+.info .filter{
+	text-align: left !important;
+}
+.info .filter button{
+	text-align: right;
+	margin-left:30%;
+}
+.info .filter button svg{
+	background: gba(253, 158, 40, 0.4);
+}
+#platforms{
+	margin-top: 20px;
+}
+#platforms img{
+	width: 20%;
+	margin-right: 10px;
+	border-radius: 12px;
+	box-shadow: 1px 1px 10px rgba(253, 158, 40, 0.4) ;
+}
+.desc{
+	margin: 20px 0;
+	line-height: 25px;
+	color: white;
+	font-size: 14px;
+	font-weight: 500;
+}
+.content .h1{
+	font-weight: 700;
+}
+.buttons{
+	width: 40%;
+	margin: 20px 20px 20px 0;
+}
+.buttons h4{
+	color: white;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+.img_btn{
+	text-align: center;
+	color: white;
+	border: solid 1px #940000;
+	border-radius: 12px;
+	padding: 5px 15px;
+}
+.img_btn p{
+	margin-bottom: 0px;
+	color: white;
+	margin-top: 5px;
+	font-weight: 600;
+}
+.img_btn img{
+	width: 80%;
+	margin: auto;
+}
+body{
+    background: #111;
+}
+.next{
+    position: fixed !important;
+    bottom: 10px;
+    left: 50px;
+}
+.buscador{
+	width: 20%;
+	background:black;
+	position: fixed;
+	height: 100%;
+	z-index: 1;
+	color:white;
+	margin-left: 7% !important;
+	top: 0;
+	display: none;
+	border-left: solid 1px rgba(255, 255, 255, 0.2);
+}
+.btop{
+	border-top: solid 1px rgba(255, 255, 255, 0.2);
+	text-align: center;
+}
+.btop .col-4{
+	border-bottom: solid 2px grey;
+	padding-bottom:20px;
+}
+.btop .col-4:hover{
+	fill:rgb(253, 158, 40);
+	border-bottom: solid 2px rgb(253, 158, 40);;
+}
+.btop .col-4:hover .cls-1{
+	fill:rgb(253, 158, 40);
+}
+.buscador form{
+	margin-top: 20px;
+	width: 100%;
+}
+.buscador form input{
+	border-radius: 12px;
+	width: 100%;
+	padding:5px 10px;
+}
+.fw-bold{
+	font-weight: bolder;
+}
+.cls-1 {
+	fill: white;
+}
+.elenco {
+  display: flex;
+  overflow-x: auto;
+  max-height: 320px;
+  white-space: nowrap;
+  overflow-y: hidden;
+  width: 100%;
+}
+.elenco .row {
+  white-space: nowrap;
+  overflow-y: hidden;
+  flex-wrap: nowrap; /* agregar esta propiedad */
+}
+.elenco_inner {
+  background: black;
+  border-radius: 12px;
+  padding-bottom: 5px;
+  width: 100%; /* ajustar el ancho */
+  flex-shrink: 0; /* evitar que se reduzca de tamaño */
+}
+.elenco_inner img{
+	border-radius: 12px 12px 0 0;
+	width: 100%;
+	margin-bottom: 15px;
+}
+.elenco .shim img{
+	width: 100%;
+	padding:0px !important;
+}
+.elenco .shim{
+	padding:0px;
+}
+.elenco p{
+	font-size: 12px;
+}
+.elenco .h5{
+	color:white !important;
+	margin-bottom: 0px;
+	font-size: 16px;
+}
+.filterf{
+	position: fixed;
+	top: 10px;
+	left: 25%;
+	width: 50%;
+	z-index: 10;
+	color:rgb(253, 158, 40);
+	background:#26231B !important;
+	border-radius: 16px;
+	display: none;
+}
+.filterf h4{
+	text-align:center;
+}
+.filterf p{
+	color:rgb(253, 158, 40);
+}
+.gen .col-3{
+	margin-top: 20px;
+}
+
+
+
+
+
+
+.range_container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0% auto;
+}
+
+.sliders_control {
+  position: relative;
+  min-height: 50px;
+}
+
+.form_control {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  color: #635a5a;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  pointer-events: all;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px #C6C6C6;
+  cursor: pointer;
+  margin-top: 7px;
+}
+
+input[type=range]::-moz-range-thumb {
+  -webkit-appearance: none;
+  pointer-events: all;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px #C6C6C6;
+  cursor: pointer;  
+  margin-top: -25px;
+}
+
+input[type=range]::-webkit-slider-thumb:hover {
+  background: #f7f7f7;
+}
+
+input[type=range]::-webkit-slider-thumb:active {
+  box-shadow: inset 0 0 3px rgb(253, 158, 40), 0 0 9px rgb(253, 158, 40);
+  -webkit-box-shadow: inset 0 0 3px rgb(253, 158, 40), 0 0 9px rgb(253, 158, 40);
+}
+
+input[type="number"] {
+  color: rgb(253, 158, 40);
+  width: 40px;
+  height: 20px;
+  font-size: 16px;
+  border: none;
+  background:none;
+  float: left;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+   opacity: 0;
+}
+
+input[type="range"] {
+  -webkit-appearance: none; 
+  appearance: none;
+  height: 10px;
+  width: 95%;
+  position: absolute;
+  background-color: rgb(253, 158, 40);
+  pointer-events: none;
+}
+
+#fromSlider {
+  height: 0;
+  z-index: 1;
+}
+
+
+.file-select {
+  position: relative;
+  display: inline-block;
+    cursor: pointer;
+}
+
+.file-select:hover {
+    cursor: pointer;
+}
+
+.file-select::before {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  content: 'Seleccionar'; /* testo por defecto */
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+    cursor: pointer;
+}
+
+.file-select input[type="file"] {
+  opacity: 0;
+  width: 200px;
+  display: inline-block;
+    cursor: pointer;
+}
+
+ #fotoPerfil::before {
+  content: 'Cambiar foto de perfil';
+    cursor: pointer;
+}
