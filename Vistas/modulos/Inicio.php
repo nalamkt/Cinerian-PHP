@@ -69,12 +69,7 @@
             if($comprobar != false){
                 
                 echo '<div class="card">
-<<<<<<< Updated upstream
 
-                <iframe width="727" height="409" src="https://www.youtube.com/embed/GDWauwXOoik" title="Marvel Studios’ Black Panther: Wakanda Forever | Official Teaser" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-=======
->>>>>>> Stashed changes
                     <div class="row">
                         <div class="col-2">
                             <img src="'.$urlP.''.$imgPerfil.'" width="90">
