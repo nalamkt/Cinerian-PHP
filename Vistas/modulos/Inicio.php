@@ -69,9 +69,12 @@
             if($comprobar != false){
                 
                 echo '<div class="card">
+<<<<<<< Updated upstream
 
                 <iframe width="727" height="409" src="https://www.youtube.com/embed/GDWauwXOoik" title="Marvel Studios’ Black Panther: Wakanda Forever | Official Teaser" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+=======
+>>>>>>> Stashed changes
                     <div class="row">
                         <div class="col-2">
                             <img src="'.$urlP.''.$imgPerfil.'" width="90">
@@ -152,7 +155,7 @@
 <!--         <div class="card">
                 <div class="row">
                     <div class="col-2">
-                        <img src="<?php echo $urlP; ?>Vistas/img/images/profile.png" width="90">
+                        <img src="<?php //echo $urlP; ?>Vistas/img/images/profile.png" width="90">
                     </div>
                     <div class="col-10">
                         <p class="text-white social-title">
@@ -177,37 +180,37 @@
                     </div> -->
                 <!-- </div>
                 <div class="col-12 mt-3 px-0">
-                    <img src="<?php echo $urlP; ?>Vistas/img/images/peliculas/rush.jpeg" class="w-100 br24 minglow">
+                    <img src="<?php //echo $urlP; ?>Vistas/img/images/peliculas/rush.jpeg" class="w-100 br24 minglow">
                 </div>
                 <div class="row px-4">
                     <div class="col-5 buttons">
                         <div class="row">
                             <div class="col-4">
-                                <img src="<?php echo $urlP; ?>Vistas/img/images/like.png">
+                                <img src="<?php //echo $urlP; ?>Vistas/img/images/like.png">
                             </div>
                             <div class="col-4">
-                                <img src="<?php echo $urlP; ?>Vistas/img/images/comentar.png">
+                                <img src="<?php //echo $urlP; ?>Vistas/img/images/comentar.png">
                             </div>
                             <div class="col-4">
-                                <img src="<?php echo $urlP; ?>Vistas/img/images/mas.png">
+                                <img src="<?php //echo $urlP; ?>Vistas/img/images/mas.png">
                             </div>
                         </div>
                     </div>
                     <div class="col-6 text-right buttons">
-                        <img src="<?php echo $urlP; ?>Vistas/img/images/visto.png">
+                        <img src="<?php //echo $urlP; ?>Vistas/img/images/visto.png">
                     </div>
                 </div>
                 <div class="row px-5">
                     <div class="col-1 seen text-right">
                         <div class="row">
                             <div class="col-4">
-                                <img src="<?php echo $urlP; ?>Vistas/img/images/smiley.png" class="w-100">
+                                <img src="<?php //echo $urlP; ?>Vistas/img/images/smiley.png" class="w-100">
                             </div>
                             <div class="col-4">
-                                <img src="<?php echo $urlP; ?>Vistas/img/images/profile.png" class="w-100">
+                                <img src="<?php //echo $urlP; ?>Vistas/img/images/profile.png" class="w-100">
                             </div>
                             <div class="col-4">
-                                <img src="<?php echo $urlP; ?>Vistas/img/images/smiley.png" class="w-100">
+                                <img src="<?php //echo $urlP; ?>Vistas/img/images/smiley.png" class="w-100">
                             </div>
                         </div>
                     </div>
