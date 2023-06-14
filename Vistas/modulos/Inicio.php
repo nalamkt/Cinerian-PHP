@@ -69,54 +69,38 @@
             if($comprobar != false){
                 
                 echo '<div class="card">
-
+                
                     <div class="row">
-                        <div class="col-2">
-                            <img src="'.$urlP.''.$imgPerfil.'" width="90">
-                        </div>
-                        <div class="col-10">
-                            <p class="text-white social-title">
-                                <b>'.$user["nombre"].'</b> vio y calificó con
+                            <div class="col-3 col-md-2 profpic">
+                                <img src="'.$urlP.''.$imgPerfil.'">
+                            </div>
+                            <div class="col-9 col-md-10">
+                                <p class="text-white social-title">
+                                    <b>'.$user["nombre"].'</b> vio
+                                </p>
+                                <p class="mov-tit">'.$result["title"].'</p>
+                                <div class="clear"></div>
+                                <div class="social-title">
+                                    Puntuación: ';
 
-                            </p>
-                            <p class="cn font-weight-bold social-title">'.$result["title"].'</p>
+                                 echo 
+                                    include('starcomplete.php');
+                                    include('starcomplete.php');
+                                    include('starcomplete.php');
+                                    include('starnofill.php');
+                                    include('starnofill.php');
+                                echo '
+                                </div>
+                            </div>
                         </div>
-                        <!-- <div class="col-2 text-right">
-                            <svg viewBox="0 0 100 100" width="60%">
-                              <defs>
-                                <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
-                                  <stop offset="0%" stop-color="#FF9900"/>
-                                  <stop offset="100%" stop-color="#FFDA00"/>
-                                </linearGradient>
-                              </defs>
-                              <polygon points="50,0 61.803,35.355 98.197,35.355 68.405,57.745 79.608,93.098 50,70.708 20.392,93.098 31.595,57.745 1.803,35.355 38.197,35.355" fill="url(#grad)"/>
-                              <text x="50" y="65" text-anchor="middle" font-size="40" font-weight="900" fill="#000">2</text>
-                            </svg>
-
-                        </div> -->
-                    </div>
                     <div class="col-12 mt-3 px-0">
                         <img src="https://image.tmdb.org/t/p/w500'.$imgP["posters"][0]["file_path"].'" class="w-100 br24 minglow">
 
                     </div>
-                    <div class="row px-4">
-                        <div class="col-5 buttons">
-                            <div class="row">
-                                <div class="col-4">
-                                    <img src="'.$urlP.'Vistas/img/images/like.png">
-                                </div>
-                                <div class="col-4">
-                                    <img src="'.$urlP.'Vistas/img/images/comentar.png">
-                                </div>
-                                <div class="col-4">
-                                    <img src="'.$urlP.'Vistas/img/images/mas.png">
-                                </div>
-                            </div>
+                    <div class="row px-0">';
+                    include('buttons.php');
+                    echo '
                         </div>
-                        <div class="col-6 text-right buttons">
-                            <img src="'.$urlP.'Vistas/img/images/visto.png">
-                        </div>
-                    </div>
                     <div class="row px-5">
                         <div class="col-1 seen text-right">
                             <div class="row">
