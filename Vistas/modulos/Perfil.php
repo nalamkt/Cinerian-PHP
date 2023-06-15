@@ -127,60 +127,7 @@
             </div>
         </div>
         <div class="top-rated row mt-4">
-            <div class="col-lg-12 text-left">
-                <h3>TOP RATED 
-                    <svg viewBox="0 0 100 100" width="2%">
-                                      <defs>
-                                        <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
-                                          <stop offset="0%" stop-color="#FF9900"/>
-                                          <stop offset="100%" stop-color="#FFDA00"/>
-                                        </linearGradient>
-                                      </defs>
-                                      <polygon points="50,0 61.803,35.355 98.197,35.355 68.405,57.745 79.608,93.098 50,70.708 20.392,93.098 31.595,57.745 1.803,35.355 38.197,35.355" fill="url(#grad)"/>
-                    </svg>
-                    <svg viewBox="0 0 100 100" width="2%">
-                      <defs>
-                        <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
-                          <stop offset="0%" stop-color="#FF9900"/>
-                          <stop offset="100%" stop-color="#FFDA00"/>
-                        </linearGradient>
-                      </defs>
-                      <polygon points="50,0 61.803,35.355 98.197,35.355 68.405,57.745 79.608,93.098 50,70.708 20.392,93.098 31.595,57.745 1.803,35.355 38.197,35.355" fill="url(#grad)"/>
-                    </svg>
-                    <svg viewBox="0 0 100 100" width="2%">
-                      <defs>
-                        <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
-                          <stop offset="0%" stop-color="#FF9900"/>
-                          <stop offset="100%" stop-color="#FFDA00"/>
-                        </linearGradient>
-                      </defs>
-                      <polygon points="50,0 61.803,35.355 98.197,35.355 68.405,57.745 79.608,93.098 50,70.708 20.392,93.098 31.595,57.745 1.803,35.355 38.197,35.355" fill="url(#grad)"/>
-                    </svg>
-                    <svg viewBox="0 0 100 100" width="2%">
-                      <defs>
-                        <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
-                          <stop offset="0%" stop-color="#FF9900"/>
-                          <stop offset="100%" stop-color="#FFDA00"/>
-                        </linearGradient>
-                      </defs>
-                      <polygon points="50,0 61.803,35.355 98.197,35.355 68.405,57.745 79.608,93.098 50,70.708 20.392,93.098 31.595,57.745 1.803,35.355 38.197,35.355" fill="url(#grad)"/>
-                    </svg>
-                    <svg viewBox="0 0 100 100" width="2%">
-                      <defs>
-                        <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
-                          <stop offset="0%" stop-color="#FF9900"/>
-                          <stop offset="100%" stop-color="#FFDA00"/>
-                        </linearGradient>
-                      </defs>
-                      <polygon points="50,0 61.803,35.355 98.197,35.355 68.405,57.745 79.608,93.098 50,70.708 20.392,93.098 31.595,57.745 1.803,35.355 38.197,35.355" fill="url(#grad)"/>
-                    </svg>
-
-                </h3>
-            </div>
             <div class="col-lg-12 row mt-3">
-                <div class="indicator">
-                    <img src="Vistas/img/images/left.png">
-                </div>
                 <div class="col clasifier">
                     <div class="row">
                         <?php
@@ -238,87 +185,8 @@
                     </div>
                         
                 </div>
-                <div class="indicator">
-                    <img src="Vistas/img/images/right.png">
-                </div>
             </div>
         </div>
-
-        <div class="top-rated row">
-            <div class="col-lg-12 text-left">
-                <h3>VISTAS</h3>
-            </div>
-            <div class="col-lg-12 row mt-5">
-                <div class="indicator">
-                    <img src="Vistas/img/images/left.png">
-                </div>
-                <div class="col clasifier">
-
-                    <div class="row">
-
-                        <?php
-
-                        $columna = 'id_usuario';
-                        $valor = $_SESSION["id"];
-
-                        $pelisVistas = PeliculasC::PelisVistasC($columna, $valor);
-
-                        foreach ($pelisVistas as $key => $value) {
-                            
-                            $ch = curl_init();
-
-                            curl_setopt($ch, CURLOPT_URL, 'https://api.themoviedb.org/3/movie/'.$value["id_pelicula"].'?api_key=f359e4f5496836068edda48527fe8c58&language=es');
-
-                            curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-                            curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
-
-                            $headers = array();
-                            $headers[] = 'Accept: application/json';
-                            curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
-
-                            $result = curl_exec($ch);
-
-                            curl_close($ch);
-
-                            $result = json_decode($result, true);
-
-                            $ch1 = curl_init();
-
-                            curl_setopt($ch1, CURLOPT_URL, 'https://api.themoviedb.org/3/movie/'.$value["id_pelicula"].'/images?api_key=f359e4f5496836068edda48527fe8c58');
-
-                            curl_setopt($ch1, CURLOPT_RETURNTRANSFER, 1);
-                            curl_setopt($ch1, CURLOPT_CUSTOMREQUEST, 'GET');
-
-                            $headers = array();
-                            $headers[] = 'Accept: application/json';
-                            curl_setopt($ch1, CURLOPT_HTTPHEADER, $headers);
-
-                            $imgP = curl_exec($ch1);
-
-                            curl_close($ch1);
-
-                            $imgP = json_decode($imgP, true);
-
-                            echo '<div class="col-lg-3">
-                                    <img src="https://image.tmdb.org/t/p/w500'.$imgP["posters"][0]["file_path"].'">
-                                </div>';
-
-                        }
-
-                        ?>
-                        
-                        
-                    </div>
-
-                    
-                </div>
-               <div class="indicator">
-                    <img src="Vistas/img/images/right.png">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 
 

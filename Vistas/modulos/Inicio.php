@@ -120,7 +120,7 @@
                             <b>Martina</b> y <b>otros</b> vieron esta película
                         </div>
                     </div>
-                    <p class="px-4 py-3">Ver los 24 comentarios</p>
+                    <p class="px-4 py-3 comen">Ver los 24 comentarios</p>
                 </div>';
 
             }  

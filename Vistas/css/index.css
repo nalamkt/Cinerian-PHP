@@ -316,6 +316,9 @@ header #searchbar form input{
 	width: 70px;
 	clear: both;
 }
+.comen{
+	user-select: none;
+}
 .img_btn{
 	text-align: center;
 	color: white;
@@ -635,6 +638,7 @@ header{
 	width: 100%;
 	margin: auto;
 	text-align: center;
+	padding:0px 5%;
 }
 .head_profile {
 	text-align: left;
@@ -667,10 +671,12 @@ header{
 	width: 85%;
 	margin: 20px auto;
 	font-size: 21px;
-	padding: 0px 15% 15px 15%;
+	padding: 0px;
 }
 .opciones .col-lg-4{
 	border-bottom:solid 2px #929292;
+	user-select: none;
+	cursor: pointer;
 }
 .opciones .col-lg-4:hover{
 	color:#FF9D00;
